@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewCocktail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textViewTitleCocktail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCocktail"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCocktail"
+        tools:text="Titulo/Nombre del coctel" />
+
+    <TextView
+        android:id="@+id/textViewInstruccionCocktail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCocktail"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitleCocktail"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCocktail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleCocktail"
+        tools:text="Llena un vaso con Absolut. Agregue el jugo de lim\u00f3n. Agregue hielo y rodajas de lim\u00f3n." />
+</androidx.constraintlayout.widget.ConstraintLayout>
