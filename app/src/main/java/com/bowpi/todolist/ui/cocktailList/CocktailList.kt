@@ -1,4 +1,4 @@
-package com.bowpi.todolist.cocktailList
+package com.bowpi.todolist.ui.cocktailList
 
 import android.content.Context
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bowpi.todolist.cocktailList.adapter.CocktailAdapter
+import com.bowpi.todolist.ui.cocktailList.adapter.CocktailAdapter
 import com.bowpi.todolist.model.CocktailResponse
 import com.bowpi.todolist.databinding.FragmentSecondBinding
 import com.bowpi.todolist.services.repository.CocktailRepository
@@ -60,7 +60,7 @@ class CocktailList : Fragment() {
 
     fun searchCocktails(search: String){
         repository.searchCocktails(search) { cocktails ->
-            val adapter = CocktailAdapter(cocktails)
+            val adapter = CocktailAdapter(cocktails,this)
             binding.recyclerViewCocktails.adapter = adapter
         }
     }

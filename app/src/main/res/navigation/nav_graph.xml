@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.bowpi.todolist.FirstFragment"
+        android:name="com.bowpi.todolist.ui.todoList.TodoListFragment"
         android:label="@string/todo_list_title"
         tools:layout="@layout/fragment_first">
 
@@ -17,12 +17,23 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.bowpi.todolist.cocktailList.CocktailList"
+        android:name="com.bowpi.todolist.ui.cocktailList.CocktailList"
         android:label="@string/Seleccion_receta"
         tools:layout="@layout/fragment_second">
-
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            android:id="@+id/action_SecondFragment_to_createTodoFragment"
+            app:destination="@id/createTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTodoFragment"
+        android:name="com.bowpi.todolist.ui.createTodo.CreateTodoFragment"
+        android:label="@string/crear_tarea"
+        tools:layout="@layout/fragment_create_todo" >
+        <argument
+            android:name="cocktail"
+            app:argType="com.bowpi.todolist.model.Cocktail" />
+        <action
+            android:id="@+id/action_createTodoFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>

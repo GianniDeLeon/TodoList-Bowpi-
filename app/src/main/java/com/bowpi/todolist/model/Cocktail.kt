@@ -1,9 +1,14 @@
 package com.bowpi.todolist.model
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
 
 data class CocktailResponse(
     val drinks: List<Cocktail>
 )
 
+
+@Parcelize
 data class Cocktail(
     val idDrink: String,
     val strDrink: String,
@@ -56,4 +61,4 @@ data class Cocktail(
     val strImageAttribution: String?,
     val strCreativeCommonsConfirmed: String?,
     val dateModified: String?
-)
+) : Parcelable
