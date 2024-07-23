@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532029224918",
+    "project_id": "todolist-b835f",
+    "storage_bucket": "todolist-b835f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532029224918:android:1c21167d280b9da49e5677",
+        "android_client_info": {
+          "package_name": "com.bowpi.todolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1bxauf76nWMAdfonOU6qnhH0AV9yeKxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

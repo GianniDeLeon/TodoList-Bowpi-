@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")
+    id("androidx.navigation.safeargs.kotlin")
+    id("kotlin-parcelize")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -39,7 +43,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -49,4 +52,21 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Gson para serialización y deserialización de JSON
+    implementation("com.google.code.gson:gson:2.8.8")
+
+    // Glide para la carga de imágenes
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation("jp.wasabeef:glide-transformations:4.3.0")
+    kapt("com.github.bumptech.glide:compiler:4.12.0")
+
+    // Retrofit para consumo de APIs
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Firebase Realtime Database
+    implementation("com.google.firebase:firebase-database-ktx:20.0.3")
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+    implementation("com.google.firebase:firebase-analytics")
 }
