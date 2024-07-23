@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.bowpi.todolist.SecondFragment"
+        android:name="com.bowpi.todolist.cocktailList.CocktailList"
         android:label="@string/Seleccion_receta"
         tools:layout="@layout/fragment_second">
 
