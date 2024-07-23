@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.bowpi.todolist.SecondFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/Seleccion_receta"
         tools:layout="@layout/fragment_second">
 
         <action
