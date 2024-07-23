@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.bowpi.todolist.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/todo_list_title"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -17,8 +17,8 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.bowpi.todolist.SecondFragment"
-        android:label="@string/second_fragment_label"
+        android:name="com.bowpi.todolist.cocktailList.CocktailList"
+        android:label="@string/Seleccion_receta"
         tools:layout="@layout/fragment_second">
 
         <action
